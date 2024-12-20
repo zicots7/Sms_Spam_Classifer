@@ -24,7 +24,7 @@ jobs:
       - name: build and push docker image to registry
         uses: docker/build-push-action@v5
         with:
-          context: DockerFileFolder/
+          context: ./Dockerfile
           push: true
           tags: sms_spam_classifier:latest
             
