@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: zico7/app:latest
+          tags: sms_spam_classification:latest
