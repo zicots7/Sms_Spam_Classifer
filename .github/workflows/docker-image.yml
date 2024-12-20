@@ -11,9 +11,9 @@ jobs:
   build:
    runs-on: ubuntu-latest
    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        name: Login to Docker Hub
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      name: Login to Docker Hub
       uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: docker-hub-repo/image-name
@@ -29,6 +29,6 @@ jobs:
       -
         name: Build and push
         uses: docker/build-push-action@v6
-        with:
-          push: true
-          tags: sms_spam_classifier:latest
+          with:
+            push: true
+            tags: sms_spam_classifier:latest
