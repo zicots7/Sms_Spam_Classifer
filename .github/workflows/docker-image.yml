@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: user/sms_spam_classification:latest
+          tags: user/app:latest
