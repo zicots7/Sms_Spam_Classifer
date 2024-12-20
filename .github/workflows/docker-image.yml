@@ -7,8 +7,8 @@ on:
     # Publish semver tags as releases.
   pull_request:
     branches: [ "main" ]
-jobs:
-  build:
+  jobs:
+    build:
       runs-on: ubuntu-latest
       steps:
     - uses: actions/checkout@v3
